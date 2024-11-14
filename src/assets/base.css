@@ -1,0 +1,75 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --primary-color: #83ff85;
+  --secondary-color: #cbffcc;
+  --tertiary-color: #2d533e;
+}
+
+:root {
+  --color-background: var(--white);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--black);
+
+  --section-gap: 160px;
+
+  --header-itens-gap: 38px;
+
+  --icon-primary: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(103%)
+    contrast(101%);
+  --icon-secondary: invert(40%) sepia(50%) saturate(600%) hue-rotate(360deg) brightness(90%)
+    contrast(100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
